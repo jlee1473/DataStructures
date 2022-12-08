@@ -112,5 +112,12 @@ public class Functional {
     System.out.println("\nAdd with function reference");
     System.out.println(list1.stream().reduce(0, Functional::add));
 
+    /**
+     * Reduce Identity :
+     * Any Math operations + -  * / is 0;
+     * Max and Min is 0;
+     * Join String is "" (empty line);
+     */
+
   }
 }
