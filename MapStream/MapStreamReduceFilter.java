@@ -2,12 +2,10 @@ package MapStream;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
-public class Functional {
+public class MapStreamReduceFilter {
 
   public static List<Integer> addOne (List<Integer> list) {
     // TODO: Make an addOne function using map
@@ -106,11 +104,11 @@ public class Functional {
     System.out.println(data_out);
 
     //Reduction with identity value of 0 for addition
-    int result = list1.stream().reduce(0, Functional::add);
+    int result = list1.stream().reduce(0, MapStreamReduceFilter::add);
     System.out.println("Reduction result: " + result);
 
     System.out.println("\nAdd with function reference");
-    System.out.println(list1.stream().reduce(0, Functional::add));
+    System.out.println(list1.stream().reduce(0, MapStreamReduceFilter::add));
 
     /**
      * Reduce Identity :
