@@ -1,4 +1,4 @@
-import org.w3c.dom.Node;
+package DataStructures;
 
 public class LinkedList {
   Node head;
@@ -36,7 +36,7 @@ public class LinkedList {
     }
 
     Node printNode = list.head;
-    System.out.print("LinkedList: ");
+    System.out.print("DataStructures.LinkedList: ");
 
     while(printNode != null) {
       System.out.print(printNode.data + " ");
