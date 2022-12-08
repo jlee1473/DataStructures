@@ -1,7 +1,8 @@
-package org.bcit.comp2522.lectures.sl07;
+package FileIO;
+
 import java.io.*;
 
-public class Exercise {
+public class FileIO {
 
   public static void main(String args[]) {
     InputStreamReader cin = null;
@@ -9,7 +10,7 @@ public class Exercise {
 
 
     try {
-      outfile = new FileOutputStream("text/output.txt");
+      outfile = new FileOutputStream("output.txt");
       cin = new InputStreamReader(System.in);
       System.out.println("Enter characters to store to file or enter q to quit: ");
       char c;
@@ -19,11 +20,11 @@ public class Exercise {
         c = (char) cin.read();
       }
 
-      } catch (FileNotFoundException e) {
-        throw new RuntimeException(e);
-      } catch (IOException e) {
-        throw new RuntimeException(e);
-      }
+    } catch (FileNotFoundException e) {
+      throw new RuntimeException(e);
+    } catch (IOException e) {
+      throw new RuntimeException(e);
+    }
   }
 
 }
